@@ -21,6 +21,14 @@ Each detected rule category contributes once. The total is capped at 100: 0–24
 
 Rules are stored in the `RULES` array. UI text, samples and guidance are stored in `I18N`. The app checks text locally; it does not authenticate senders, visit links or query live threat databases. A low score does not establish that a message is legitimate.
 
+## Deploy to GitHub Pages
+
+The repository includes `.nojekyll` so GitHub Pages can serve the single-file app directly.
+
+In **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/ (root)**, then save. GitHub will show the published URL after deployment completes.
+
+The expected site address is https://rfarihin-dev.github.io/scamscan/ . This address is available only after Pages has been enabled and its deployment has succeeded.
+
 ## Deploy to Vercel
 
 Import this repository in Vercel. Select the **Other** framework preset, use the repository root, leave the build command empty and serve the root directory. No environment variables are required.
